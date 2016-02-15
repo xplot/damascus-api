@@ -10,5 +10,5 @@ import logging
 def home():
     print "this is a test log"
     logging.warn("Warning, log working!!!")
-    log("warn test ajadex")
+    #log("warn test ajadex")
     return jsonify({"test": "hello"})
