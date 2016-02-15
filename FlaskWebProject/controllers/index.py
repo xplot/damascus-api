@@ -3,10 +3,12 @@ Routes for the damascus-api.
 """
 
 from flask import render_template, jsonify
-from FlaskWebProject import app
+from app import webApp
 import logging
 
-@app.route('/')
+print webApp
+
+@webApp.route('/')
 def home():
     print "this is a test log"
     logging.warn("Warning, log working!!!")
