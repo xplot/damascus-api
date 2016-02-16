@@ -9,4 +9,4 @@ class ProcessMessageCommand(object):
 
     def execute(self):
         pipeline = PipelineQuery(self.message_info['pipeline']).query()
-        return pipeline(input)
+        return pipeline(self.input)
