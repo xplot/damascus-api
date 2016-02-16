@@ -1,8 +1,8 @@
 from flask import render_template, jsonify
-from init import webApp
+from FlaskWebProject import app
 import logging
 
-@webApp.route('/')
+@app.route('/')
 def home():
     logging.warn("Warning, log working!!!")
     return jsonify({

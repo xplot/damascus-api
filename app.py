@@ -1,9 +1,9 @@
 import logging
 
-from init import webApp
 import FlaskWebProject
+from FlaskWebProject import app
 
 if __name__ == '__main__':
-    webApp.run(debug=True)
+    app.run(debug=True)
 
 

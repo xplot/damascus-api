@@ -1,7 +1,7 @@
 from flask import render_template, jsonify, request
-from init import webApp
+from FlaskWebProject import app
 
-@webApp.route('/api/message')
+@app.route('/api/message')
 def get_message():
     return jsonify({
         "message": [
@@ -9,7 +9,7 @@ def get_message():
         ]
     })
 
-@webApp.route('/api/message', methods=['POST'])
+@app.route('/api/message', methods=['POST'])
 def post_message():
     input_json = request.get_json(force=True)
     return jsonify(input_json)
