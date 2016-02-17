@@ -1,2 +1,2 @@
 from pipeline_query import *
-from message_info import *
+from event_webhook_query import EventWebhookQuery
